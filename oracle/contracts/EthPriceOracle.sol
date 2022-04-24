@@ -1,6 +1,6 @@
 pragma solidty 0.5.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./CallerContractInterface.sol";
+import "./CallerContractInteface.sol";
 
 contract EthPriceOracle is Ownable {
     uint256 private randNonce = 0;
