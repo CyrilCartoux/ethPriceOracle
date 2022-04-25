@@ -1,4 +1,5 @@
-pragma solidty 0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./CallerContractInteface.sol";
 
@@ -12,7 +13,7 @@ contract EthPriceOracle is Ownable {
     function getLatestEthPrice() public returns (uint256) {
         randNonce++;
         uint256 id = uint256(
-            keccak256(abi.encodePacked(now, msg.sender, randNonce))
+            keccak256(abi.encodePacked(block.timestamp, msg.sender, randNonce))
         ) % modulus;
         pendingRequests[id] = true;
         emit GetLatestEthPriceEvent(msg.sender, id);

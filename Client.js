@@ -1,3 +1,4 @@
+const axios = require('axios')
 const common = require('./utils/common.js')
 const SLEEP_INTERVAL = process.env.SLEEP_INTERVAL || 2000
 const PRIVATE_KEY_FILE_NAME = process.env.PRIVATE_KEY_FILE || './caller/caller_private_key'
@@ -51,3 +52,5 @@ async function init () {
     await callerContract.methods.updateEthPrice().send({ from: ownerAddress })
   }, SLEEP_INTERVAL);
 })()
+
+module.exports = {retrieveLatestEthPrice}

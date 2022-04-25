@@ -1,0 +1,233 @@
+{
+  "contractName": "EthPriceOracleInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLatestEthPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLatestEthPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/EthPriceOracleInterface.sol\":\"EthPriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/EthPriceOracleInterface.sol\":{\"keccak256\":\"0xad69cd304559771799378db9c6cf752192b5f1c378350d367ec6271fa273df2d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dedcf3b470d12ebf921b1d95b1f404dd4062687842cc2721644303e80f152514\",\"dweb:/ipfs/Qmb8PjYm8ZZ7Ahbi6hFEqHByfpqqLfKiZdBtGBqgpWaYaN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.0;\r\nabstract contract EthPriceOracleInterface {\r\n  function getLatestEthPrice() public virtual returns (uint256);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\cyril.cartoux\\Desktop\\Dev\\Solidity\\EthPriceOracle\\caller\\contracts\\EthPriceOracleInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/EthPriceOracleInterface.sol",
+    "exportedSymbols": {
+      "EthPriceOracleInterface": [
+        251
+      ]
+    },
+    "id": 252,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 245,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:3"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 251,
+        "linearizedBaseContracts": [
+          251
+        ],
+        "name": "EthPriceOracleInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "30c0b9ec",
+            "id": 250,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestEthPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "130:2:3"
+            },
+            "returnParameters": {
+              "id": 249,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 248,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 250,
+                  "src": "157:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 247,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "156:9:3"
+            },
+            "scope": 251,
+            "src": "104:62:3",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 252,
+        "src": "57:112:3"
+      }
+    ],
+    "src": "33:138:3"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/EthPriceOracleInterface.sol",
+    "exportedSymbols": {
+      "EthPriceOracleInterface": [
+        251
+      ]
+    },
+    "id": 252,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 245,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:3"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 251,
+        "linearizedBaseContracts": [
+          251
+        ],
+        "name": "EthPriceOracleInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "30c0b9ec",
+            "id": 250,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestEthPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "130:2:3"
+            },
+            "returnParameters": {
+              "id": 249,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 248,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 250,
+                  "src": "157:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 247,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "156:9:3"
+            },
+            "scope": 251,
+            "src": "104:62:3",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 252,
+        "src": "57:112:3"
+      }
+    ],
+    "src": "33:138:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-04-25T08:27:10.604Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
