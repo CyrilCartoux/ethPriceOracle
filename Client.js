@@ -9,7 +9,10 @@ async function getCallerContract (web3js) {
   const networkId = await web3js.eth.net.getId()
   return new web3js.eth.Contract(CallerJSON.abi, CallerJSON.networks[networkId].address)
 }
-
+/**
+ * Request the latest ETH price from Binance
+ * @returns ETH Price (number)
+ */
 async function retrieveLatestEthPrice () {
   const resp = await axios({
     url: 'https://api.binance.com/api/v3/ticker/price',
@@ -21,7 +24,14 @@ async function retrieveLatestEthPrice () {
   return resp.data.price
 }
 
+/**
+ * Listens for events
+ * @param {*} callerContract 
+ */
 async function filterEvents (callerContract) {
+  /**
+   * The user get the response to their price update request
+   */
   callerContract.events.PriceUpdatedEvent({ filter: { } }, async (err, event) => {
     if (err) console.error('Error on event', err)
     console.log('* New PriceUpdated event. ethPrice: ' + event.returnValues.ethPrice)

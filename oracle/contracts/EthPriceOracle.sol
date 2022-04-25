@@ -10,6 +10,9 @@ contract EthPriceOracle is Ownable {
     event GetLatestEthPriceEvent(address callerAddress, uint256 id);
     event SetLatestEthPriceEvent(uint256 ethPrice, address callerAddress);
 
+    /**
+        Sends the request and the associated requestID
+     */
     function getLatestEthPrice() public returns (uint256) {
         randNonce++;
         uint256 id = uint256(
@@ -20,6 +23,9 @@ contract EthPriceOracle is Ownable {
         return id;
     }
 
+    /**
+        Validate the response & forwards it to the caller contract
+     */
     function setLatestEthPrice(
         uint256 _ethPrice,
         address _callerAddress,
